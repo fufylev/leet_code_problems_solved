@@ -95,7 +95,7 @@ class Solution {
   String intToRoman(int num) {
     String result = '';
     final thousands = (num / 1000).floor();
-    final hundreds = ((num - thousands * 1000) / 100).floor();
+    final hundreds = ((num % 1000) / 100).floor();
     final tens = ((num - thousands * 1000 - hundreds * 100) / 10).floor();
     final units = num % 10;
 
