@@ -1,0 +1,6 @@
+name: 'leet_code_problems_solved'
+
+environment:
+  sdk: '^3.2.4'
+dependencies:
+  intl: ^0.20.2
