@@ -34,35 +34,35 @@ void main() async {
   Stdin reader = stdin;
   Stdout writer = stdout;
 
-  // final n = int.parse(reader.readLineSync() ?? '0');
-  //
-  // List<String> list = [];
-  //
-  // for (int i = 0; i < n; i++) {
-  //   list.add(reader.readLineSync()!);
-  // }
-  //
-  // final result = getSimpleSuggest(n, list);
-  // writer.writeln(result);
-  writer.writeln(getSimpleSuggest(
-    5,
-    [
-      'sayHello',
-      'println',
-      'sleep',
-      'spendMoney',
-      'log',
-    ],
-  ));
+  final n = int.parse(reader.readLineSync() ?? '0');
 
-  writer.writeln(getSimpleSuggest(
-    5,
-    [
-      'dedede',
-      'drrdr',
-      'qwqw',
-      'qqqqq',
-      'dddddd',
-    ],
-  ));
+  List<String> list = [];
+
+  for (int i = 0; i < n; i++) {
+    list.add(reader.readLineSync()!);
+  }
+
+  final result = getSimpleSuggest(n, list);
+  writer.writeln(result);
+  // writer.writeln(getSimpleSuggest(
+  //   5,
+  //   [
+  //     'sayHello',
+  //     'println',
+  //     'sleep',
+  //     'spendMoney',
+  //     'log',
+  //   ],
+  // ));
+  //
+  // writer.writeln(getSimpleSuggest(
+  //   5,
+  //   [
+  //     'dedede',
+  //     'drrdr',
+  //     'qwqw',
+  //     'qqqqq',
+  //     'dddddd',
+  //   ],
+  // ));
 }
